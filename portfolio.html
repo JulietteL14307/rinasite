@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+        <title>Portfolio Page</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Wire+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+      </head>
+
+      <body>
+
+        <div>
+          <ul id="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a id="current" href="portfolio.html">Portfolio</a></li>
+            <li><a href="policy.html">Policies</a></li>
+            <li><a href="policy.html">Book</a></li>
+          </ul>
+        </div>
+        <div id="portfolio">
+            <img class="mySlides" src="1brow.jpeg" style="width:100%">
+            <img class="mySlides" src="2brow.jpeg" style="width:100%">
+            <img class="mySlides" src="3brow.jpeg" style="width:100%">
+            <img class="mySlides" src="4brow.jpeg" style="width:100%">
+            <img class="mySlides" src="5brow.jpeg" style="width:100%">
+            <img class="mySlides" src="6brow.jpeg" style="width:100%">
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          slideshow();
+          
+          function slideshow() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(slideshow, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+      </body>
+</html>

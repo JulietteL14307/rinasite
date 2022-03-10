@@ -1,0 +1,399 @@
+/* home page */
+
+#heading {
+    background-color: black;
+    width: 100%;
+  }
+
+h1 {
+  font-family: 'Warnes', cursive;
+  position: absolute;
+  top: 2%;
+  left: 8%;
+  font-size: 60px;
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #FF8174,
+    0 0 82px #FF8174, 0 0 92px #FF8174, 0 0 102px #FF8174,
+    0 0 151px #FF8174;
+  z-index: 2;
+}
+
+h2 {
+  font-family: 'Warnes', cursive;
+  position: absolute;
+  text-align: center;
+  top: 105px;
+  left: 15%;
+  font-size: 40px;
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #FF8174,
+    0 0 82px #FF8174, 0 0 92px #FF8174, 0 0 102px #FF8174,
+    0 0 151px #FF8174;
+  z-index: 2;
+}
+
+body {
+  font-family: 'Wire One', sans-serif;
+  font-weight: bold;
+  background-image: url("pawel-czerwinski-glmqeNTUEfE-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+#heading img {
+    width: 100%;
+    filter: grayscale(100%);
+    margin-top: 150px;
+  }
+
+ #container {
+   display: flex;
+   flex-direction: column;
+ }
+
+ #nav {
+   text-align: center;
+ }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 3px solid black;
+    width: 100%;
+  }
+  
+    li:hover {
+    background: -webkit-linear-gradient(#FF8174, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+  
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 75px;
+  }
+  
+a {
+    text-decoration: none;
+    padding: 15px;
+  }
+
+footer {
+  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+  }
+
+#pink {
+    color: #FF8174;
+    padding-left: 25px;
+    padding-right: 65px;
+    font-size: 48px;
+  }
+
+#addr {
+  font-size: 48px;
+  padding-right: 50px;
+  color: white;
+}
+
+#flogo {
+  height: 85px;
+  width: 85px;
+  padding-right: 50px;
+}
+
+    #flogo:hover {
+    transform: scale(1.25);
+    }
+
+#ilogo {
+  height: 80px;
+  width: 80px;
+  filter: grayscale(100%);
+}
+
+    #ilogo:hover {
+    transform: scale(1.25);
+    }
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 420px) {
+  footer {
+    bottom: 8px;
+    position: absolute;
+  }
+
+  li {
+    padding-top: 45px;
+  }
+}
+  
+/* about page */
+
+#topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#current {
+  background-color: black;
+  color:white;
+}
+
+#imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rina {
+  border-radius: 50%;
+  height: 440px;
+  width: 440px;
+}
+
+#border {
+  border-radius: 50%;
+  border: 8px solid black;
+  height: 440px;
+  width: 440px;
+}
+
+#containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about {
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 5px;
+}
+
+#number {
+  color: turquoise;
+}
+
+
+#location {
+  background-color: turquoise;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 10%;
+  margin-top: 10px;
+}
+
+/* services page */
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#servbox {
+  background-color: black;
+  font-size: 60px;
+  height: 600px;
+  width: 900px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#servimg1 {
+  background-image: linear-gradient(black, black), 
+  url('1brow.jpeg');
+  background-blend-mode: saturation;
+  height: 400px;
+  width: 605px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 40px;
+}
+
+#servimg2 {
+  background-image: linear-gradient(black, black), 
+  url('2brow.jpeg');
+  background-blend-mode: saturation;
+  height: 400px;
+  width: 547px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 40px;
+}
+
+#servimg3 {
+  background-image: linear-gradient(black, black), 
+  url('3brow.jpeg');
+  background-blend-mode: saturation;
+  height: 400px;
+  width: 536px;
+  border-radius: 50%;
+  background-size: 180%;
+  margin-left: 40px;
+}
+
+#servtxt {
+  color: white;
+  text-align: center;
+}
+
+#price {
+  color: turquoise;
+}
+
+button {
+  font-size: 55px;
+  background-color: black;
+  color: turquoise;
+  font-family: 'Wire One', sans-serif;
+  font-weight: bolder;
+  border: 3px solid turquoise;
+}
+
+button:hover {
+  color: #FF8174;
+  border-color: #FF8174;
+}
+
+/* portfolio page */
+
+.mySlides {
+  height: 1000px;
+  width: 964px;
+  margin-top: 180px;
+}
+
+/* policy page */
+
+#policybox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#acknBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 60px;
+  height: 70px;
+  margin: 10px;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+#acknBox:hover {
+  border: solid 5px turquoise;
+}
+
+#arrow {
+  height: 60px;
+  width: 60px;
+}
+
+#title {
+  color: turquoise;
+}
+
+#cancel {
+  background-color: black;
+  color: white;
+  height: 950px;
+  width: 900px;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#card {
+  background-color: black;
+  color: white;
+  height: 560px;
+  width: 900px;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#covid {
+  background-color: black;
+  color: white;
+  height: 670px;
+  width: 900px;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-device-width: 500px) {
+  #portfolio img {
+    height: 600px;
+    width: 600px;
+    margin-top: 60px;
+  }
+
+  #cancel {
+    font-size: 40px;
+    height: 440px;
+  }
+
+  #card {
+    font-size: 40px;
+    height: 320px;
+  }
+
+  #covid {
+    font-size: 40px;
+    height: 400px;
+  }
+}
+
+#ackntext {
+  font-size: 40px;
+  color: black;
+  background-color: turquoise;
+  font-weight: bolder;
+}
+
+#ackntext:hover {
+  background-color: black;
+  color: turquoise;
+}

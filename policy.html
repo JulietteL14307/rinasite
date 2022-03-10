@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+        <title>Policy Page</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Wire+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+      </head>
+
+      <body>
+        <div>
+          <ul id="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a id="current" href="policy.html">Policies</a></li>
+            <li><a href="policy.html">Book</a></li>
+          </ul>
+        </div>
+          <div id="policybox">
+              <button onclick="scrollToBottom()" id="acknBox" title="Go to bottom">
+              <p>Acknowledgement</p>
+              <img id="arrow" src="arrow.png" alt="downward facing arrow">
+              </button>
+            <div id="cancel">
+              <p id="title">Cancellation Policy :</p>
+              <p>If you cancel at least 72 hours in advance, I will be able to reschedule your appointment for another day without an added deposit. If you cancel within 24 hours of your appointment, 20% (deposit not included) of your payment is still due that day and the deposit is non transferable, meaning if you wanted to reschedule for another day, you will owe another deposit. If you no show/ no call me on the same day of your appointment 100% (deposit included) of your payment is due. There are absolutely no exceptions, Covid included.</p>
+            </div>
+            <div id="card">
+              <p id="title">Card Policy :</p>
+              <p>The card information you have provided will not be accessible until the day of your appointment. There is a $50 deposit to be made prior to your appointment, that can be made through Venmo or Cash App or even PayPal. I will seperately message you for that deposit.</p> 
+            </div>
+            <div id="covid">
+              <p id="title">Covid-19 Policy :</p>
+              <p>If you find out that you have to quarantine the same day as your appointment, 100% of your payment is still due that day, but the deposit will be transferred for another day after quarantine. If this is your case, just communicate with me.</p>
+              <p>Do not send me your Covid results, for that is a HIPAA violation. Thank you!</p>
+            </div>
+          </div>
+          <div id="ackn">
+            <a href="booking.html">
+              <p id="ackntext">I acknowledge the policies and wish to proceed with booking.</p>
+            </a>
+          </div>
+
+          <script>
+
+          var box = document.getElementById("ackn");
+
+          function scrollToBottom() {
+            box.scrollIntoView(true);
+          };
+
+          </script>
+
+      </body>
+</html>
